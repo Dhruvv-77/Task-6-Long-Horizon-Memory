@@ -3,8 +3,16 @@ function login(user) {
   return { user, token: `t-${user}` };
 }
 
+const invalidated = new Set();
+
 function session(token) {
+  if (invalidated.has(token)) return false;
   return typeof token === 'string' && token.startsWith('t-');
 }
 
-module.exports = { login, session };
+function logout(token) {
+  invalidated.add(token);
+  return true;
+}
+
+module.exports = { login, session, logout };
