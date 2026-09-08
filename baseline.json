@@ -1,0 +1,41 @@
+{
+  "generatedAt": "2026-09-07T04:21:35.015Z",
+  "metrics": [
+    {
+      "strategy": "no_memory",
+      "resumeCorrectness": 0,
+      "contextBudgetAdherence": 0,
+      "recallAccuracy": 0,
+      "memoryPollutionRate": 0,
+      "completionRate": 0,
+      "scenarios": 12
+    },
+    {
+      "strategy": "naive_truncation",
+      "resumeCorrectness": 1,
+      "contextBudgetAdherence": 1,
+      "recallAccuracy": 0,
+      "memoryPollutionRate": 0,
+      "completionRate": 1,
+      "scenarios": 12
+    },
+    {
+      "strategy": "summarization_only",
+      "resumeCorrectness": 1,
+      "contextBudgetAdherence": 1,
+      "recallAccuracy": 0,
+      "memoryPollutionRate": 0,
+      "completionRate": 1,
+      "scenarios": 12
+    },
+    {
+      "strategy": "tiered_memory",
+      "resumeCorrectness": 1,
+      "contextBudgetAdherence": 1,
+      "recallAccuracy": 1,
+      "memoryPollutionRate": 0,
+      "completionRate": 1,
+      "scenarios": 12
+    }
+  ]
+}

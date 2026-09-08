@@ -1,0 +1,11 @@
+{
+  "name": "task6-memory",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Task 6 — Long-Horizon Memory and Context Engineering (Agentic AI Intern Programme)",
+  "scripts": {
+    "build": "pnpm --filter @task6/memory build",
+    "test": "pnpm --filter @task6/memory test",
+    "memory": "pnpm --filter @task6/memory memory"
+  }
+}
